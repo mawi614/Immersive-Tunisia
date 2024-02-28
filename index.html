@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Boilerplate -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="“Pragma”" content="”no-cache”" />
+    <meta http-equiv="“Expires”" content="”-1″" />
+    <meta http-equiv="“CACHE-CONTROL”" content="”NO-CACHE”" />
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/master.css" />
+    <!-- Loads Neuton Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Adds the Font Awesome kit via link -->
+    <script
+      src="https://kit.fontawesome.com/19ca4fda24.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Page Title -->
+    <title>Immersive Tunisia</title>
+    <!-- Playcanvas Boilerplate -->
+    <script src="playcanvas-stable.min.js"></script>
+    <script src="__settings__.js"></script>
+  </head>
+  <!-- Webpage Elements -->
+  <body>
+    <script src="__start__.js"></script>
+    <script src="__loading__.js"></script>
+    <div class="container">
+      <div class="row">
+        <div class="text">
+          <h1>Immersive Tunisia</h1>
+          <h3 id="monument-name">Monument Name</h3>
+          <p id="monument-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+            dolor ea, tempore voluptatem corrupti necessitatibus minus quibusdam
+            rerum officia eaque explicabo veritatis nihil quos, eligendi
+            praesentium quis! Rem, nemo dolores.
+          </p>
+        </div>
+        <div class="render">
+          <div class="row">
+            <button class="btn" onclick="previous()">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <div id="pcanv"></div>
+            <button class="btn" onclick="next()">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+  <script src="__game-scripts.js"></script>
+</html>

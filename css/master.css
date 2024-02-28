@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Neuton", serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #080808;
+    color: rgb(255, 255, 255);
+}
+.container{
+    padding: 2.5% 2.5%;
+}
+.row{
+    padding: 20px 40px;
+    background-color: #101010;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+/*--Text--*/
+.text{
+    flex-basis: 30%;
+    width: 100%;
+}
+.text h1{
+    color: #aaa;
+    font-size: 36px;
+    font-weight: 700;
+}
+.text h3{
+    font-size: 50px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.text p{
+    font-size: 24px;
+    font-weight: 200;
+    transition: 0.5s;
+}
+/*--Rendering--*/
+.render{
+    flex-basis: 60%;
+}
+.btn{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 13px 23px;
+    border: 2.5px solid #f7f7f7;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: #777;
+    color: #222222;
+    height: 60px;
+    align-self: center;
+    transition: background 0.25s;
+}
+.btn:hover {
+    border-color: #000000;
+    background: #f7f7f7;
+}
+.render iframe{
+    border-radius: 5px;
+    width: 800px;
+    height: 400px;
+}
+/*--Responsive--*/
+@media only screen and (max-width: 600px){
+
+}

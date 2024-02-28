@@ -28,34 +28,37 @@
   </head>
   <!-- Webpage Elements -->
   <body>
+    <!-- Playcanvas Init -->
     <script src="__start__.js"></script>
     <script src="__loading__.js"></script>
+    <!-- Webpage Elements -->
     <div class="container">
       <div class="row">
+        <button class="btn" onclick="previous()">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
         <div class="text">
-          <h1>Immersive Tunisia</h1>
-          <h3 id="monument-name">Monument Name</h3>
+          <div class="row">
+            <h1>Immersive Tunisia</h1>
+            <button class="lang-btn" onclick="changeLangToAR()">AR</button>
+            <button class="lang-btn" onclick="changeLangToFR()">FR</button>
+            <button class="lang-btn" onclick="changeLangToEN()">EN</button>
+          </div>
+          <h3 id="monument-name">Beb Dzira</h3>
           <p id="monument-description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
-            dolor ea, tempore voluptatem corrupti necessitatibus minus quibusdam
-            rerum officia eaque explicabo veritatis nihil quos, eligendi
-            praesentium quis! Rem, nemo dolores.
+            One of the oldest gates of the ancient city, so named because it
+            opens into the peninsula of Watan al-Qibli and overlooks the island
+            of Shrik al-Absi, who was the governor of Watan al-Qibli (now
+            Nabeul)
           </p>
         </div>
-        <div class="render">
-          <div class="row">
-            <button class="btn" onclick="previous()">
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <div id="pcanv"></div>
-            <button class="btn" onclick="next()">
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
+        <button class="btn" onclick="next()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
     </div>
   </body>
+  <!-- More JS -->
   <script src="js/main.js"></script>
   <script src="__game-scripts.js"></script>
 </html>

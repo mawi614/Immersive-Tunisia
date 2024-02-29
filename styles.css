@@ -1,36 +1,24 @@
-html {
-    height: 100%;
-    width: 100%;
-    background-color: #1d292c;
-}
-body {
-    margin: 0;
-    max-height: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: #1d292c;
-    font-family: Helvetica, arial, sans-serif;
-    position: relative;
-    width: 100%;
-
-    -webkit-tap-highlight-color: transparent;
-}
-
 #application-canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    width: 800px;
 }
 #application-canvas.fill-mode-NONE {
-    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
 }
 #application-canvas.fill-mode-KEEP_ASPECT {
     width: 100%;
     height: auto;
-    margin: 0;
+    margin-right: 0;
+    margin-left: auto;
 }
 #application-canvas.fill-mode-FILL_WINDOW {
     width: 100%;

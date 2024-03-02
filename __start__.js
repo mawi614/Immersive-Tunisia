@@ -32,18 +32,9 @@
 
             // Disable long-touch select on iOS devices
             canvas.style['-webkit-user-select'] = 'none';
-            canvas.style = 
-           `
-           border-radius:5px;
-           scale:0.8;
-           margin-left: auto;
-           margin-right: auto;
-           margin-top: 0;
-           display: block;
-           padding-top:-25%;
-           `;            
-            
+
             document.body.appendChild(canvas);
+
             return canvas;
         },
 
@@ -119,7 +110,7 @@
 
         return devices;
     };
-    /**/
+
     var configureCss = function (fillMode, width, height) {
         // Configure resolution and resize event
         if (canvas.classList) {
@@ -235,4 +226,3 @@
         configure();
     }
 })();
-

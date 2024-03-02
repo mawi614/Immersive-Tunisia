@@ -65,7 +65,8 @@
         },
 
         reflow: function (app, canvas) {
-            this.resizeCanvas(app, canvas);
+            //DISABLED
+            //this.resizeCanvas(app, canvas);
 
             // Poll for size changes as the window inner height can change after the resize event for iOS
             // Have one tab only, and rotate from portrait -> landscape -> portrait

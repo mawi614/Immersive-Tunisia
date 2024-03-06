@@ -129,8 +129,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    max-height:80vh;
-    max-width:100vw;
+    max-width: 100vw;
 }
 /*--Responsive--*/
 @media only screen and (max-width: 1000px){

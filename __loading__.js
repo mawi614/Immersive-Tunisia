@@ -53,7 +53,7 @@ pc.script.createLoadingScreen(function (app) {
             '    left: 0;',
             '    height: 100%;',
             '    width: 100%;',
-            '    background-color: #283538;',
+            '    background-color: #080808;',
             '}',
 
             '#application-splash {',

@@ -8,7 +8,7 @@ window.CONTEXT_OPTIONS = {
     'preferWebGl2': true,
     'powerPreference': "default"
 };
-window.SCRIPTS = [ 168579627, 168579629, 168579628, 168579630, 168633145, 168634159 ];
+window.SCRIPTS = [ 168579627, 168579629, 168579628, 168579630, 168633145, 168634159, 170311323, 170311324, 170311325, 170311326, 170311327, 170311328, 170311421, 170311423, 170311424 ];
 window.CONFIG_FILENAME = "config.json";
 window.INPUT_SETTINGS = {
     useKeyboard: true,
@@ -18,4 +18,6 @@ window.INPUT_SETTINGS = {
 };
 pc.script.legacy = false;
 window.PRELOAD_MODULES = [
+    {'moduleName' : 'Ammo', 'glueUrl' : 'files/assets/170311527/1/ammo.wasm.js', 'wasmUrl' : 'files/assets/170311528/1/ammo.wasm.wasm', 'fallbackUrl' : 'files/assets/170311526/1/ammo.js', 'preload' : true},
+    {'moduleName' : 'DracoDecoderModule', 'glueUrl' : 'files/assets/170311135/1/draco.wasm.js', 'wasmUrl' : 'files/assets/170311136/1/draco.wasm.wasm', 'fallbackUrl' : 'files/assets/170311134/1/draco.js', 'preload' : true},
 ];

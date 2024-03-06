@@ -48,7 +48,7 @@
 
             if (fillMode === pc.FILLMODE_NONE || fillMode === pc.FILLMODE_KEEP_ASPECT) {
                 if ((fillMode === pc.FILLMODE_NONE && canvas.clientHeight < window.innerHeight) || (canvas.clientWidth / canvas.clientHeight >= window.innerWidth / window.innerHeight)) {
-                    canvas.style.marginTop = Math.floor((window.innerHeight - canvas.clientHeight) / 2) + 'px';
+                    //canvas.style.marginTop = Math.floor((window.innerHeight - canvas.clientHeight) / 2) + 'px';
                 } else {
                     canvas.style.marginTop = '';
                 }
@@ -65,8 +65,7 @@
         },
 
         reflow: function (app, canvas) {
-            //DISABLED
-            //this.resizeCanvas(app, canvas);
+           this.resizeCanvas(app, canvas);
 
             // Poll for size changes as the window inner height can change after the resize event for iOS
             // Have one tab only, and rotate from portrait -> landscape -> portrait

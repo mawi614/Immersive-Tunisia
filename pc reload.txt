@@ -1,0 +1,9 @@
+__start__.js
+
+- comment out canvas.style.marginTop = Math.floor((window.innerHeight - canvas.clientHeight) / 2) + 'px'; Line 51 (removes the marginTop)
+- comment out this.resizeCanvas(app, Canvas); Line 69
+- comment out styles.css
+
+__loading__.js
+
+- change background-color to #080808; Line 47

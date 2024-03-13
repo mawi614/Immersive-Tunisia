@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #080808;
+    background-color: #101010;
     color: rgb(255, 255, 255);
 }
 
@@ -13,12 +13,15 @@ body {
     /* Fixes the mobile empty space */
     overflow-x: hidden;
 }
+.frame{
+    
+}
 .row{
     background-color: #101010;
     display: flex;
     justify-content:space-between;
     
-    height: calc(50% - 85px);
+
     width: 100%;
 }
 
@@ -55,7 +58,7 @@ body {
     }
 /*--Text--*/
 .text{
-    flex-basis: 70%;
+    flex-basis: 85%;
     width: 100%;
 }
 .text h1{
@@ -65,12 +68,12 @@ body {
     flex-basis: 30%;
 }
 .text h3{
-    font-size: 50px;
+    font-size: 26px;
     font-weight: 500;
     transition: 0.5s;
 }
 .text p{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 200;
     transition: 0.5s;
 }
@@ -82,18 +85,18 @@ body {
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 30px;
     padding: 13px 23px;
     border: 2.5px solid #f7f7f7;
     transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
     background: #777;
     color: #222222;
-    height: 60px;
+    height: 65px;
     align-self: center;
     transition: background 0.25s;
 
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .btn:hover {
     border-color: #000000;
@@ -106,7 +109,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 13px 16px;
     border: 2.5px solid #f7f7f7;
     transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
@@ -122,12 +125,11 @@ body {
     border-color: #000000;
     background: #aaa;
 }
-/*--canvas--*/
-#application-canvas.fill-mode-NONE{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+
+#application-canvas{
+    max-height:700px;
 }
+
 /*--Responsive--*/
 @media only screen and (max-width: 1920px){
 

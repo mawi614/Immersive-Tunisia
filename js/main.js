@@ -236,3 +236,20 @@ function changeLangToEN(){
     MonumentName.animate({opacity:[0,1]},{duration:2000})
     MonumentText.animate({opacity:[0,1]},{duration:2000});
 }
+
+// Detects mobile
+function detectMob() {
+    const toMatch = [
+        /Android/i,
+        /webOS/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /Windows Phone/i
+    ];
+    
+    return toMatch.some((toMatchItem) => {
+        return navigator.userAgent.match(toMatchItem);
+    });
+}

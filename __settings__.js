@@ -20,6 +20,6 @@ window.INPUT_SETTINGS = {
 pc.script.legacy = false;
 window.PRELOAD_MODULES = [
     {'moduleName' : 'DracoDecoderModule', 'glueUrl' : 'files/assets/170311135/1/draco.wasm.js', 'wasmUrl' : 'files/assets/170311136/1/draco.wasm.wasm', 'fallbackUrl' : 'files/assets/170311134/1/draco.js', 'preload' : true},
-    {'moduleName' : 'BASIS', 'glueUrl' : 'files/assets/171101928/1/basis.wasm.js', 'wasmUrl' : 'files/assets/171101926/1/basis.wasm.wasm', 'fallbackUrl' : 'files/assets/171101927/1/basis.js', 'preload' : false},
     {'moduleName' : 'Ammo', 'glueUrl' : 'files/assets/170311527/1/ammo.wasm.js', 'wasmUrl' : 'files/assets/170311528/1/ammo.wasm.wasm', 'fallbackUrl' : 'files/assets/170311526/1/ammo.js', 'preload' : true},
+    {'moduleName' : 'BASIS', 'glueUrl' : 'files/assets/171101928/1/basis.wasm.js', 'wasmUrl' : 'files/assets/171101926/1/basis.wasm.wasm', 'fallbackUrl' : 'files/assets/171101927/1/basis.js', 'preload' : false},
 ];

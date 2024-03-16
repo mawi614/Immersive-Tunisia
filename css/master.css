@@ -13,9 +13,7 @@ body {
     /* Fixes the mobile empty space */
     overflow-x: hidden;
 }
-.frame{
-    
-}
+
 .row{
     background-color: #101010;
     display: flex;

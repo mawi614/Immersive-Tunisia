@@ -63,8 +63,12 @@
     </div>
   </body>
   <!-- More JS -->
-
-  <script src="js/main.js"></script>
+  <script src="js/main.js">
+    var screenOr = window.screen.orientation;
+    if (detectMob()) {
+      screenOr.lock("landscape");
+    }
+  </script>
   <!-- Resetting Page background color and moving canvas in the dom -->
   <script defer>
     const pcanvas = document.getElementById("application-canvas");
@@ -72,4 +76,5 @@
     newParent.appendChild(pcanvas);
   </script>
   <script src="__game-scripts.js"></script>
+  <script></script>
 </html>

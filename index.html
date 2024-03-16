@@ -64,9 +64,17 @@
   </body>
   <!-- More JS -->
   <script src="js/main.js">
-    var screenOr = window.screen.orientation;
-    if (detectMob()) {
-      screenOr.lock("landscape");
+    const containerElement = document.querySelector(".container");
+    //containerElement.appendChild(promptOrientation);
+
+    while (true) {
+      if(screen.availHeight > screen.availWidth){
+        alert("Please use Landscape!");
+      }
+      else
+      {
+
+      }
     }
   </script>
   <!-- Resetting Page background color and moving canvas in the dom -->

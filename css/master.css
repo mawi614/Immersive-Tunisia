@@ -13,7 +13,26 @@ body {
     /* Fixes the mobile empty space */
     overflow-x: hidden;
 }
-
+/*--Orientation Prompt--*/
+.prompt{
+    
+    position: absolute;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    padding-top: 10%;
+    text-align: center;
+    
+    background-color:#101010 ;
+}
+.prompt p{
+    font-size: 100px;
+}
+.prompt i{
+    margin-top: 10%;
+    scale: 10;
+}
 .row{
     background-color: #101010;
     display: flex;

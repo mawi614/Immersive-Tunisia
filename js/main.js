@@ -237,31 +237,3 @@ function changeLangToEN(){
     MonumentText.animate({opacity:[0,1]},{duration:2000});
 }
 
-/*--Detects mobile browsers--*/
-function detectMob() {
-    const toMatch = [
-        /Android/i,
-        /webOS/i,
-        /iPhone/i,
-        /iPad/i,
-        /iPod/i,
-        /BlackBerry/i,
-        /Windows Phone/i
-    ];
-    
-    return toMatch.some((toMatchItem) => {
-        return navigator.userAgent.match(toMatchItem);
-    });
-}
-
-/*--Create the prompt screen--*/
-var promptOrientation = document.createElement('div');
-var promptText = document.createElement('p');
-var promptIcon = document.createElement('i');
-
-promptOrientation.className = 'prompt';
-promptText.innerText = 'Please Rotate Your Device To Landscape';
-promptIcon.className = 'fa-solid fa-rotate';
-
-promptOrientation.appendChild(promptText);
-promptOrientation.appendChild(promptIcon);

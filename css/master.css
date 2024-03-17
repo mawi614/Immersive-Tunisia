@@ -151,3 +151,17 @@ body {
 @media only screen and (max-width: 1920px){
 
 }
+
+@media screen and (orientation:portrait)
+{
+   .prompt{
+    display: block;
+   }
+}
+
+@media screen and (orientation:landscape)
+{
+   .prompt{
+    display: none;
+   }
+}

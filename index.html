@@ -28,6 +28,10 @@
   </head>
   <!-- Webpage Elements -->
   <body>
+    <div class="prompt">
+      <p>Please Rotate Your Device</p>
+      <i class="fa-solid fa-rotate"></i>
+    </div>
     <!-- Playcanvas Init -->
     <script src="__modules__.js"></script>
     <script src="__start__.js"></script>
@@ -63,26 +67,13 @@
     </div>
   </body>
   <!-- More JS -->
-  <script src="js/main.js">
-    const containerElement = document.querySelector(".container");
-    //containerElement.appendChild(promptOrientation);
-
-    while (true) {
-      if(screen.availHeight > screen.availWidth){
-        alert("Please use Landscape!");
-      }
-      else
-      {
-
-      }
-    }
-  </script>
+  <script src="js/main.js"></script>
   <!-- Resetting Page background color and moving canvas in the dom -->
   <script defer>
     const pcanvas = document.getElementById("application-canvas");
     const newParent = document.querySelector(".frame");
     newParent.appendChild(pcanvas);
   </script>
+  <!--game scripts-->
   <script src="__game-scripts.js"></script>
-  <script></script>
 </html>

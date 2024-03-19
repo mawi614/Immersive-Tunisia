@@ -1,5 +1,6 @@
 window.ASSET_PREFIX = "";
 window.SCRIPT_PREFIX = "";
+// Use this to control which scene shows up
 window.SCENE_PATH = "1956413.json";
 window.CONTEXT_OPTIONS = {
     'antialias': true,

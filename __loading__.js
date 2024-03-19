@@ -52,7 +52,7 @@ pc.script.createLoadingScreen(function (app) {
             '    top: 0;',
             '    left: 0;',
             '    height: 100%;',
-            '    width: 100%;',
+            '    width: 100%;',            
             '    background-color: #101010;',
             '}',
 
@@ -61,10 +61,11 @@ pc.script.createLoadingScreen(function (app) {
             '    top: calc(50% - 28px);',
             '    width: 264px;',
             '    left: calc(50% - 132px);',
-            '    scale: 2;',
+            '    scale: 3;',
+ 
             '}',
 
-            '#application-splash img {',            
+            '#application-splash img {',
             '    width: 100%;',
             '}',
 

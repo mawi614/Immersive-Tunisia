@@ -46,18 +46,25 @@
         <div class="text">
           <div class="row-btn">
             <h1>Immersive Tunisia</h1>
-            <button class="lang-btn" onclick="changeLangToAR()">AR</button>
-            <button class="lang-btn" onclick="changeLangToFR()">FR</button>
-            <button class="lang-btn" onclick="changeLangToEN()">EN</button>
+            <div id="lang-bar">
+              <button class="lang-btn" id="lb1" onclick="changeLangToAR()">
+                <img class="lang-img" src="icon/ps.svg" alt="Palestine flag" />
+              </button>
+              <button class="lang-btn" id="lb2" onclick="changeLangToFR()">
+                <img class="lang-img" src="icon/fr.svg" alt="France flag" />
+              </button>
+              <button class="lang-btn" id="lb3" onclick="changeLangToEN()">
+                <img
+                  class="lang-img"
+                  src="icon/gb.svg"
+                  alt="United Kingdom flag"
+                />
+              </button>
+            </div>
           </div>
           <div class="content">
-            <h3 id="monument-name">Beb Dzira</h3>
-            <p id="monument-description">
-              One of the oldest gates of the ancient city, so named because it
-              opens into the peninsula of Watan al-Qibli and overlooks the
-              island of Shrik al-Absi, who was the governor of Watan al-Qibli
-              (now Nabeul)
-            </p>
+            <h3 id="monument-name"></h3>
+            <p id="monument-description"></p>
           </div>
         </div>
         <button class="btn" onclick="next()">
@@ -73,6 +80,9 @@
     const pcanvas = document.getElementById("application-canvas");
     const newParent = document.querySelector(".frame");
     newParent.appendChild(pcanvas);
+  </script>
+  <script>
+    goToMonument(currentSet);
   </script>
   <!--game scripts-->
   <script src="__game-scripts.js"></script>

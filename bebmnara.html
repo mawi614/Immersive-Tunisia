@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Boilerplate -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="“Pragma”" content="”no-cache”" />
+    <meta http-equiv="“Expires”" content="”-1″" />
+    <meta http-equiv="“CACHE-CONTROL”" content="”NO-CACHE”" />
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/master.css" />
+    <!-- Loads Neuton Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Adds the Font Awesome kit via link -->
+    <script
+      src="https://kit.fontawesome.com/19ca4fda24.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Page Title -->
+    <title>Immersive Tunisia</title>
+    <!-- Playcanvas Boilerplate -->
+    <script src="playcanvas-stable.min.js"></script>
+    <script src="__settings__bebmnara.js"></script>
+  </head>
+  <!-- Webpage Elements -->
+  <body>
+    <div class="prompt">
+      <p>Please Rotate Your Device</p>
+      <i class="fa-solid fa-rotate"></i>
+    </div>
+    <!-- Playcanvas Init -->
+    <script src="__modules__.js"></script>
+    <script src="__start__.js"></script>
+    <script src="__loading__.js"></script>
+    <!-- Webpage Elements -->
+    <div class="container">
+      <div class="frame"></div>
+      <div class="row">
+        <button class="btn" onclick="previous()">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <div class="text">
+          <div class="row-btn">
+            <h1>Immersive Tunisia</h1>
+            <div id="lang-bar">
+              <button class="lang-btn" id="lb1" onclick="changeLangToAR()">
+                <img class="lang-img" src="icon/ps.svg" alt="Palestine flag" />
+              </button>
+              <button class="lang-btn" id="lb2" onclick="changeLangToFR()">
+                <img class="lang-img" src="icon/fr.svg" alt="France flag" />
+              </button>
+              <button class="lang-btn" id="lb3" onclick="changeLangToEN()">
+                <img
+                  class="lang-img"
+                  src="icon/gb.svg"
+                  alt="United Kingdom flag"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="content">
+            <h3 id="monument-name"></h3>
+            <p id="monument-description"></p>
+          </div>
+        </div>
+        <button class="btn" onclick="next()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+  <!-- More JS -->
+  <script src="js/main.js"></script>
+  <script src="__game-scripts.js"></script>
+  <!-- Resetting Page background color and moving canvas in the dom -->
+  <script defer>
+    const pcanvas = document.getElementById("application-canvas");
+    const newParent = document.querySelector(".frame");
+    newParent.appendChild(pcanvas);
+  </script>
+  <script>
+    currentSet = 8;
+    goToMonument(currentSet);
+  </script>
+</html>

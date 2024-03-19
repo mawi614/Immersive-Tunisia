@@ -50,9 +50,10 @@ body {
     justify-content:left;
     flex-wrap: wrap;
 }
+
 /* Scrollbar styles */
 .content{
-    height: 100px;
+    height: 150px;
     overflow-y: scroll;
 }
 ::-webkit-scrollbar {
@@ -80,7 +81,8 @@ body {
 }
 .text h1{
     color: #aaa;
-    font-size: 36px;
+    display: none;
+    font-size: 22px;
     font-weight: 700;
     flex-basis: 30%;
 }
@@ -121,7 +123,7 @@ body {
 }
 #lang-bar{
     margin-top: 20px;
-    margin-left: 50px;
+    align-self: center;
 }
 .lang-btn{
     display: inline-block;
@@ -136,8 +138,8 @@ body {
 .lang-img{
     position: absolute;
     border-radius: 10px;
-    width: 70px;
-    translate: -40px -25px;
+    width: 50px;
+    translate: -25px -25px;
     outline: auto;
 }
 
